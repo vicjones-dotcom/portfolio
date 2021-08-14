@@ -1,61 +1,76 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      type="text/javascript"
+      src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://codesandbox.io/static/js/banner.be879265d.js"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Victoria Jones is a front-end developer, relocating in the UK. Check out her projects and contact her for job enquiries."
+      content="Victoria Jones is a front-end developer based in Nicosia, Cyprus. Check out her projects and contact her for job inquiries"
     />
     <title>Front-end developer - Victoria Jones</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-  <body>
-    <nav class="navbar fixed-position navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#" title="Victoria Jones"
-          >Victoria Jones</a
-        >
+
+  <body cz-shortcut-listen="true">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/" title="Homepage">Victoria Jones</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="index.html"
-                title="home"
+                href="/"
+                tilte="Homepage"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" title="about">About Me</a>
+              <a
+                class="nav-link"
+                href="/about.html"
+                title="About Victoria Jones"
+                >About me</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html#contact" title="contact"
-                >Contact Me</a
+              <a
+                class="nav-link"
+                href="/about.html#contact"
+                title="Contact Victoria Jones"
+                >Contact me</a
               >
             </li>
           </ul>
@@ -63,25 +78,30 @@
       </div>
     </nav>
     <h2 class="text-center">👋 Hi I am</h2>
-    <h1 class="text-center">Victoria</h1>
-    <h3 class="text-center">Front-end developer, based in Cyprus</h3>
-    <div class="navigation-links">
-      <a href="about.html#contact" class="contact-link btn" title="contact"
+    <h1 class="text-center">Victoria Jones</h1>
+    <h3 class="text-center">CY Front-end developer relocating in the UK</h3>
+    <div class="navigation-links mb-5">
+      <a
+        href="/about.html#contact"
+        class="primary-link"
+        title="Contact Victoria Jones"
         >Contact me</a
       >
-      <a href="about.html" class="about-link btn" title="about">About me</a>
+      <a href="/about.html" class="secondary-link" title="About Victoria Jones"
+        >About me</a
+      >
     </div>
-    <div class="container mw-100">
+    <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-sm-6">
           <img
-            src="images/memory-game-project.PNG"
+            src="/images/memory-game-project.PNG"
+            alt="Yoga project "
             class="img-fluid rounded d-none d-sm-block"
-            alt="memory game with planet theme"
           />
         </div>
-        <div class="col-6">
-          <h2 class="mb-3">Memory Game</h2>
+        <div class="col-sm-6">
+          <h2 class="mb-3">Memory Game app</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
@@ -89,15 +109,18 @@
             explicabo eum dolore.
           </p>
           <div class="mt-5">
-            <a href="#" class="primary-link btn project-link" title="Launch app"
-              >Launch App</a
+            <a
+              href="#"
+              class="primary-link project-link"
+              title="Memorhy game project"
+              >Launch Memory Game</a
             >
           </div>
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-6">
-          <h2 class="mb-3">Grand Bequest</h2>
+        <div class="col-sm-6">
+          <h2 class="mb-3">Weather app</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
@@ -105,29 +128,32 @@
             explicabo eum dolore.
           </p>
           <div class="mt-5">
-            <a href="#" class="primary-link btn" title="Launch app"
-              >Launch App</a
+            <a
+              href="#"
+              class="primary-link project-link"
+              title="Weather project"
+              >Launch Weather App</a
             >
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-6">
           <img
-            src="images/grand-bequest-project.PNG"
+            src="/images/weather-app.PNG"
             class="img-fluid rounded d-none d-sm-block"
-            alt="home-screen of Grand Bequest app with the logo and a button to start"
+            alt="Weather project"
           />
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-6">
+        <div class="col-sm-6">
           <img
-            src="images/calculator-project.PNG"
+            src="/images/grand-bequest-project.PNG"
             class="img-fluid rounded d-none d-sm-block"
-            alt="pink calculator"
+            alt="homescreen of grand bequest project"
           />
         </div>
-        <div class="col-6">
-          <h2 class="mb-3">Calculator app</h2>
+        <div class="col-sm-6">
+          <h2 class="mb-3">Grand Bequest app</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
             quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
@@ -135,7 +161,10 @@
             explicabo eum dolore.
           </p>
           <div class="mt-5">
-            <a href="#" class="primary-link btn" title="Launch app"
+            <a
+              href="#"
+              class="primary-link project-link"
+              title="Grand Bequest project"
               >Launch App</a
             >
           </div>

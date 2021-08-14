@@ -1,67 +1,81 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      type="text/javascript"
+      src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://codesandbox.io/static/js/banner.be879265d.js"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>About me - Victoria Jones</title>
     <meta
       name="description"
-      content="About Victoria Jones, a front-end developer relocating in the UK."
+      content="About Victoria Jones, a front-end developer based in Nicosia, Cyprus"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>About me - Victoria Jones</title>
   </head>
-  <body>
-    <nav class="navbar fixed-position navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Victoria Jones</a>
+
+  <body cz-shortcut-listen="true">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/" title="Homepage">Victoria Jones</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link" aria-current="page" href="/" tilte="Homepage"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html" title="About">About Me</a>
+              <a
+                class="nav-link active"
+                href="/about.html"
+                title="About Victoria Jones"
+                >About me</a
+              >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="about.html#contact"
-                title="Contact Section"
-                >Contact Me</a
+                href="/about.html#contact"
+                title="Contact Victoria Jones"
+                >Contact me</a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h1>About me</h1>
-    <h3>Front-end developer from Cyprus</h3>
-    <div class="about-paragraphs">
+    <h1 class="text-center">About me</h1>
+    <h3 class="text-center">Front-end developer relocating to the UK</h3>
+    <div class="about-paragraphs text-center">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
         aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
@@ -72,23 +86,31 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-          <img src="images/yoga.png" class="img-fluid p-2 shadow rounded" />
+          <img
+            src="/images/memory-game-project.PNG"
+            class="img-fluid p-2 mb-4 shadow rounded"
+            alt="Yoga project"
+          />
         </div>
         <div class="col-sm-4">
-          <img src="images/weather.png" class="img-fluid p-2 shadow rounded" />
+          <img
+            src="/images/grand-bequest-project.PNG"
+            class="img-fluid p-2 mb-4 shadow rounded"
+            alt="Weather project"
+          />
         </div>
         <div class="col-sm-4">
-          <img src="images/yogurt.png" class="img-fluid p-2 shadow rounded" />
+          <img
+            src="/images/calculator-project.PNG"
+            class="img-fluid p-2 mb-4 shadow rounded"
+            alt="Yoghurt project"
+          />
         </div>
       </div>
     </div>
-    <div id="contact">
-      <h2>📮 Contact me</h2>
-      <a
-        href="mailto:jonesvictoria077@gmail.com"
-        class="email-link"
-        title="email"
-      >
+    <div id="contact" class="mt-5">
+      <h2 class="text-center">📮 Contact me</h2>
+      <a href="mailto:jonesvictoria077@gmail.com" class="email-link">
         jonesvictoria077@gmail.com
       </a>
     </div>
